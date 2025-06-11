@@ -1,16 +1,49 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <title>Flexbox Layout</title>
+  <style>
+    .holder {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .item {
+      width: 100px;
+      height: 100px;
+      font-size: 48px;
+      text-align: center;
+      line-height: 100px;
+      color: black;
+    }
+
+    /* Optional: Different background colors for visibility */
+    .red {
+      background-color: red;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .green {
+      background-color: green;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="holder">
+    <div class="item red">1</div>
+    <div class="item blue">2</div>
+    <div class="item green">3</div>
+    <div class="item green">4</div>
+    <div class="item green">5</div>
+    <div class="item green">6</div>
+    <div class="item green">7</div>
+  </div>
 </body>
-
 </html>
